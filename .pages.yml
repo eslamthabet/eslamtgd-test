@@ -1,0 +1,93 @@
+media:
+  input: assets/uploads
+  output: /eslamtgd-test/assets/uploads
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+  rename: safe
+content:
+- name: posts
+  label: المقالات بكل التصنيفات
+  type: collection
+  path: _posts
+  format: yaml-frontmatter
+  filename:
+    template: '{year}-{month}-{day}-{hour}{minute}{second}.md'
+    field: false
+  view:
+    primary: title
+    fields:
+    - title
+    - category
+    - published
+    - date
+    sort: date
+    order: desc
+  fields:
+  - name: title
+    label: عنوان المقال
+    type: string
+    required: true
+  - name: description
+    label: وصف قصير
+    type: text
+    required: true
+  - name: date
+    label: تاريخ المقال
+    type: date
+    required: true
+    options:
+      format: yyyy-MM-dd
+  - name: category
+    label: التصنيف
+    type: select
+    required: true
+    options:
+      values:
+      - name: ai-sites
+        label: مواقع AI
+      - name: techniques
+        label: تقنيات
+      - name: apps
+        label: تطبيقات
+      - name: games
+        label: ألعاب
+      - name: prompts
+        label: برومبتات
+      - name: tutorials
+        label: شروحات
+      - name: free-ai
+        label: أدوات ذكاء اصطناعي ببلاش
+      - name: free-alternatives
+        label: بدائل مجانية لبرامج مدفوعة
+      - name: mobile-android
+        label: شروحات موبايل وأندرويد
+      - name: freelance
+        label: الربح من الإنترنت والفريلانس
+      - name: free-courses
+        label: كورسات مجانية
+      - name: ahly
+        label: كورة وأخبار الأهلي
+  - name: published
+    label: نشر المقال على الموقع (اقفله للمسودة)
+    type: boolean
+    default: false
+  - name: featured
+    label: مقال مهم (يظهر في شريط الأهم)
+    type: boolean
+    default: false
+  - name: cover
+    label: صورة الغلاف (اختياري)
+    type: image
+  - name: cover_alt
+    label: وصف الصورة
+    type: string
+  - name: body
+    label: محتوى المقال
+    type: rich-text
+    required: true
+    options:
+      format: markdown
+      switcher: true
