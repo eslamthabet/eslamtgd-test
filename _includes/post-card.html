@@ -1,0 +1,1 @@
+<article class="blog-entry"><span class="resource-tag">{% for cat in site.data.categories %}{% if cat.slug == post.category %}{{ cat.name }}{% endif %}{% endfor %}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3><p>{{ post.description | escape }}</p><a class="resource-link" href="{{ post.url | relative_url }}">اقرأ المقال ↗</a></article>

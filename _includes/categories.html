@@ -1,0 +1,1 @@
+<details class="category-menu"><summary>التصنيفات · اختار القسم</summary><nav class="blog-categories" aria-label="تصنيفات المحتوى">{% for cat in site.data.categories %}<a href="{{ '/category-' | append: cat.slug | append: '.html' | relative_url }}">{{ cat.name }}</a>{% endfor %}</nav></details>

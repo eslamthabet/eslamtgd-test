@@ -1,0 +1,25 @@
+title: إسلام ثابت | ESLAMTGD
+url: https://eslamtgd.top
+baseurl: /eslamtgd-test
+timezone: Africa/Cairo
+markdown: kramdown
+permalink: /articles/:title.html
+future: false
+strict_front_matter: true
+exclude:
+- README.md
+- CMS-GUIDE-AR.txt
+- PUBLISH-TEST-AR.txt
+- ADSENSE-SETUP-NOTES.txt
+- PREVIEW-READ-ME.txt
+- RESEARCH-SOURCES.md
+- Gemfile
+- Gemfile.lock
+- vendor
+- .pages.yml
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
