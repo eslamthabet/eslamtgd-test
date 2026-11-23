@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "ai-sites",
+    "name": "مواقع AI"
+  },
+  {
+    "slug": "techniques",
+    "name": "تقنيات"
+  },
+  {
+    "slug": "apps",
+    "name": "تطبيقات"
+  },
+  {
+    "slug": "games",
+    "name": "ألعاب"
+  },
+  {
+    "slug": "prompts",
+    "name": "برومبتات"
+  },
+  {
+    "slug": "tutorials",
+    "name": "شروحات"
+  },
+  {
+    "slug": "free-ai",
+    "name": "أدوات ذكاء اصطناعي ببلاش"
+  },
+  {
+    "slug": "free-alternatives",
+    "name": "بدائل مجانية لبرامج مدفوعة"
+  },
+  {
+    "slug": "mobile-android",
+    "name": "شروحات موبايل وأندرويد"
+  },
+  {
+    "slug": "freelance",
+    "name": "الربح من الإنترنت والفريلانس"
+  },
+  {
+    "slug": "free-courses",
+    "name": "كورسات مجانية"
+  },
+  {
+    "slug": "ahly",
+    "name": "كورة وأخبار الأهلي"
+  }
+]
